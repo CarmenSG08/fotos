@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Create Account</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--Estructura formulario-->
+        <div class="container">
+            <form action="" id="form" class="form" method="post">
+                <h1>Create Account</h1>
+
+                <!--Grupo nombre-->
+                <div class = "form__control">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id='nombre' pattern="[a-zA-Z]+">
+                    <img src="error-icon.svg" class="fas fa-exclamation-circle">
+                    <img src="success-icon.svg" class="fas fa-check-circle">
+                    <small>Rellenar este campo</small>
+                </div>
+
+                <!--Grupo email-->
+                <div class = "form__control">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id='email'>
+                    <img src="error-icon.svg" class="fas fa-exclamation-circle">
+                    <img src="success-icon.svg" class="fas fa-check-circle">
+                    <small>Rellenar este campo</small>
+                </div>
+
+                <!--Grupo password-->
+                <div class = "form__control">
+                    <label for="password">Clave</label>
+                    <input type="password" name="password" id='password' pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,18}+">
+                    <img src="error-icon.svg" class="fas fa-exclamation-circle">
+                    <img src="success-icon.svg" class="fas fa-check-circle">
+                    <small>Rellenar este campo</small>
+                </div>
+
+                <!--Grupo password2-->
+                <div class = "form__control">
+                    <label for="password2">Confirme clave</label>
+                    <input type="password" name="password2" id='password2' pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,18}+">
+                    <img src="error-icon.svg" class="fas fa-exclamation-circle">
+                    <img src="success-icon.svg" class="fas fa-check-circle">
+                    <small>Rellenar este campo</small>
+                </div>
+
+                 <!--Grupo botón enviar-->
+                <div class="form__control form_grupo_btn_envio" id="grupo_boton">
+                    <input type="submit" class="form_btn" id="form_btn" value="Enviar"></input>
+                </div> 
+
+            
+            </form>
+        </div>
+        <script src="./index.js" type="text/javascript"></script>
+    </body>
+</html>
